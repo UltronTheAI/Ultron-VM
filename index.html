@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultron VM</title>
+</head>
+<body>
+    <img src="https://i1.wp.com/windowscustomization.com/wp-content/uploads/2018/12/Galaxy-4K.gif?fit=750%2C356&quality=80&strip=all&ssl=1" class="b_img">
+    <div class="cmd">
+        <div class="title">
+            <img src="https://e7.pngegg.com/pngimages/938/847/png-clipart-linux-command-line-interface-computer-program-instruction-github-angle-rectangle.png" alt="">
+            <p>WEB</p>
+            <button onclick="f2()">-</button>
+            <button onclick="f1()">[]</button>
+            <button onclick="f4()">x</button>
+        </div>
+        <iframe height="100%" width="100%"
+            src="https://go.pioneer.com/cornrevolution"
+            name="iframe_a">
+        </iframe>
+    </div>
+    <div class="web">
+        <img src="https://e7.pngegg.com/pngimages/938/847/png-clipart-linux-command-line-interface-computer-program-instruction-github-angle-rectangle.png"
+            alt="" onclick="f3()">
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+                $(".cmd").draggable({
+                    drag: function () {
+                        var offset = $(this).offset();
+                    }
+                });
+            });
+    </script>
+</body>
+</html>
