@@ -93,5 +93,283 @@
                     });
                 });
     </script>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    height: 100vh;
+    overflow: hidden;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-name: ani;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes ani
+{
+    0%
+    {
+        filter: blur(1000px);
+    }
+}
+.b_img
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0%;
+    /* opacity: 50%; */
+    z-index: -1;
+    background-repeat: repeat;
+}
+.cmd
+{
+    width: 50%;
+    height: 50%;
+    background: #333;
+    resize: both;
+    overflow: auto;
+    position: absolute;
+    transition: 0.1s;
+    left: -100%;
+    z-index: 0;
+}
+.cmd .title
+{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90deg, rgb(12, 149, 190), rgb(247, 3, 153));
+    border-bottom: 1px solid #222;
+}
+.cmd .title img
+{
+    width: 30px;
+    border-radius: 100%;
+    margin: 5px;
+}
+.cmd .title p
+{
+    color: #fff;
+    margin: 5px;
+    position: absolute;
+    top: 5px;
+    left: 30%;
+}
+.cmd .title button
+{
+    position: relative;
+    float: right;
+    margin: 10px;
+    background: #fff;
+    border: 0;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    transition: 1s;
+}
+.cmd .title button:hover
+{
+    color: #fff;
+    background: #cc007d;
+}
+.cmd .pr
+{
+    width: 50%;
+    height: 50%;
+}
+.file
+{
+    width: 50%;
+    height: 50%;
+    background: #333;
+    resize: both;
+    overflow: auto;
+    position: absolute;
+    transition: 0.1s;
+    left: -100%;
+    z-index: 0;
+}
+.file .title
+{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90deg, rgb(12, 149, 190), rgb(247, 3, 153));
+    border-bottom: 1px solid #222;
+}
+.file .title img
+{
+    width: 30px;
+    border-radius: 100%;
+    margin: 5px;
+}
+.file .title p
+{
+    color: #fff;
+    margin: 5px;
+    position: absolute;
+    top: 5px;
+    left: 30%;
+}
+.file .title button
+{
+    position: relative;
+    float: right;
+    margin: 10px;
+    background: #fff;
+    border: 0;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    transition: 1s;
+}
+.file .title button:hover
+{
+    color: #fff;
+    background: #cc007d;
+}
+.file .pr
+{
+    width: 50%;
+    height: 50%;
+}
+.google
+{
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(30deg, rgba(175, 12, 190, 0.904), rgba(3, 247, 186, 0.596)), url('https://cdn.dribbble.com/users/623359/screenshots/13230768/untitled-1-01_4x.png');
+    resize: both;
+    overflow: auto;
+    position: absolute;
+    transition: 0.1s;
+    left: -100%;
+    z-index: 0;
+}
+.google .title
+{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90deg, rgb(12, 149, 190), rgb(247, 3, 153));
+    border-bottom: 1px solid #222;
+}
+.google .title img
+{
+    width: 30px;
+    border-radius: 100%;
+    margin: 5px;
+}
+.google .title p
+{
+    color: #fff;
+    margin: 5px;
+    position: absolute;
+    top: 5px;
+    left: 30%;
+}
+.google .title button
+{
+    position: relative;
+    float: right;
+    margin: 10px;
+    background: #fff;
+    border: 0;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    transition: 1s;
+}
+.google .title button:hover
+{
+    color: #fff;
+    background: #cc007d;
+}
+.google .pr
+{
+    width: 50%;
+    height: 50%;
+}
+::-webkit-scrollbar
+{
+    width: 5px;
+    height: 10px;
+    background: #444;
+}
+::-webkit-scrollbar-corner
+{
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+iframe
+{
+    border: 0;
+    position: absolute;
+    top: 9.9%;
+}
+.web
+{
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90%;
+    width: 200px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+}
+.web  img
+{
+    width: 20%;
+    height: 90%;
+    border-radius: 1000px;
+    opacity: 100%;
+}
+.web #i2
+{
+    width: 20%;
+    height: 90%;
+    border-radius: 1000px;
+    opacity: 100%;
+    margin-left: 50px;
+}
+form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+form input
+{
+    border: 0;
+    border-radius: 50px;
+    padding: 2px;
+    color: #333;
+    margin-right: 50px;
+}
+form button
+{
+ border: 0;
+ border-radius: 50px;
+ padding: 2px;
+ color: #333;
+}
+    </style>
 </body>
 </html>
