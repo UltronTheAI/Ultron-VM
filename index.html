@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultron VM</title>
+</head>
+<body>
+    <img src="https://i1.wp.com/windowscustomization.com/wp-content/uploads/2018/12/Galaxy-4K.gif?fit=750%2C356&quality=80&strip=all&ssl=1" class="b_img">
+    <div class="cmd">
+        <div class="title">
+            <img src="https://e7.pngegg.com/pngimages/938/847/png-clipart-linux-command-line-interface-computer-program-instruction-github-angle-rectangle.png" alt="">
+            <p>CMD</p>
+            <button onclick="f2()">-</button>
+            <button onclick="f1()">[]</button>
+            <button onclick="f4()">x</button>
+        </div>
+        <iframe height="100%" width="100%"
+            src="https://ultrontheai.github.io/Certificate/main.html"
+            name="iframe_a" id="fr">
+        </iframe>
+    </div>
+    <div class="google">
+        <div class="title">
+            <img src="https://cdn.dribbble.com/users/623359/screenshots/13230768/untitled-1-01_4x.png"
+                alt="">
+            <p>Google</p>
+            <button onclick="fg2()">-</button>
+            <button onclick="fg1()">[]</button>
+            <button onclick="fg4()">x</button>
+        </div>
+        <form action="https://www.google.com/search" method="GET">
+            <input type="search" id="text1" placeholder="scearch" name="q">
+            <button type="submit" value="Google Search">scearch</button>
+        </form>
+    </div>
+    <div class="file">
+        <div class="title">
+            <img src="data:image/png;base64,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"
+                alt="">
+            <p>Task</p>
+            <button onclick="ff2()">-</button>
+            <button onclick="ff1()">[]</button>
+            <button onclick="ff4()">x</button>
+        </div>
+    </div>
+    <div class="web">
+        <img src="https://e7.pngegg.com/pngimages/938/847/png-clipart-linux-command-line-interface-computer-program-instruction-github-angle-rectangle.png"
+            alt="" onclick="f3()">
+            <img src="https://cdn.dribbble.com/users/623359/screenshots/13230768/untitled-1-01_4x.png"
+                alt="" onclick="fg3()" id="i2">
+                <img src="data:image/png;base64,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" alt="" onclick="ff3()"
+                    id="i2">
+    </div>
+    <!-- https://drive.google.com/drive/ -->
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+                $(".cmd").draggable({
+                    drag: function () {
+                        var offset = $(this).offset();
+                        document.querySelector(".cmd").style.zIndex = "100000";
+                        document.querySelector(".google").style.zIndex = "-0";
+                        document.querySelector(".file").style.zIndex = "-0";
+                    }
+                });
+            });
+            $(function () {
+                    $(".file").draggable({
+                        drag: function () {
+                            var offset = $(this).offset();
+                            document.querySelector(".cmd").style.zIndex = "-0";
+                            document.querySelector(".google").style.zIndex = "-0";
+                            document.querySelector(".file").style.zIndex = "1000000";
+                        }
+                    });
+                });
+            $(function () {
+                    $(".google").draggable({
+                        drag: function () {
+                            var offset = $(this).offset();
+                            document.querySelector(".file").style.zIndex = "-0";
+                            document.querySelector(".cmd").style.zIndex = "-0";
+                            document.querySelector(".google").style.zIndex = "1000000";
+                        }
+                    });
+                });
+    </script>
+</body>
+</html>
