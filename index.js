@@ -109,6 +109,8 @@ function fg3() {
 function ff3() {
     document.querySelector(".web").style.background = "rgb(12, 149, 190)";
     document.querySelector(".file").style.left = "30%";
+    var inc = prompt("url");
+    document.getElementById("fr_k9").setAttribute("src", inc);
 }
 
 
